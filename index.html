@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Reservia</title>
+    </head>
 
-<body>
-    <img src="images/reservia.png" />
-    <nav>hébergement, activités et s'inscrire</nav>
+    <body>
+        <!--haut de page logo et navigations-->
+        <header>
+            <img src="images/reservia.png" alt="logo du site" class="logo"/>
+                <nav>
+                    <ul>
+                        <li class="btn"><a href="#hébergements">Hébergements</a></li>
+                        <li class="btn"><a href="#activités">Activités</a></li>
+                        <li class="btn"><a href="inscrire.html">S'inscrire</a></li>
+                    </ul>
+                </nav>
+        </header>
 
-    <header> Trouvez votre hébergement pour des vacances de rêve
-        En plein centre ville ou en pleine nature</header> 
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
 
-    <input type= "Marseille, France" />
+        <label for="Rechercher" class="rechercher"></label>
+        <input type="Rechercher" id="site-search">
+        <button>Rechercher</button>
 
-    <header> Filtres économique, familial, romantique et animaux autorisés</header>
 
-    <section>Hébergements à Marseille</section>
+        <nav class="filter">
+            <div>Filtres</div>
+                <ul>
+                    <li class="btn2" type="btn"><a href="#économique">Economique</a></li>
+                    <li class="btn2" type="btn"><a href="#familial">Familial</a></li>
+                    <li class="btn2" type="btn"><a href="#romantique">Romantique</a></li>
+                    <li class="btn2" type="btn"><a href="#animauxautorisés">Animaux autorisés</a></li>
+                </ul>
 
-    <section>Les plus populaires</section>
+        </nav>    
 
-    <section>Activités à marseille</section>
 
-    <footer>A propos, nos hébergements et assistance</footer>
+
+        <h2 id="hébergements">Hébergements à Marseille</h2>
+        <h2 id="activités">Activités à Marseille</h2>
+
+
+        <!--Le code des icones pour les filtres trouvé sur fontawesome-->
+        <i class="fas fa-money-bill-wave"></i>
+        <i class="fas fa-child"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-dog"></i>
+
+        <!--pied de page-->
+        <footer>
+            <p>
+                <div><strong>A propos</strong></div>
+                <p>Fonctionnement du site</p>
+                <p>Conditions générales de vente</p>
+                <p>Données et confidentialité</p>
+
+                <div><strong>Nos hébergements</strong></div>
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtel</p>
+
+                <div><strong>Assistance</strong></div>
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>
+            </p>
+        </footer>
     
-</body>
+    </body>
 </html>
